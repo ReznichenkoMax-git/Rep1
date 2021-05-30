@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Конструктор Object()</title>
+<script>
+
+    var human = {
+
+    firstName : "Alex",
+    secondName : "Jazun",
+    age : 27,
+    occupation: "<img src='Microsoft.jpg' width='152' height='100'/>",
+    show: function () {
+        document.write("<p>First name: " + this.firstName);
+        document.write("<p>Second name: " + this.secondName);
+        document.write("<p>Age: " + this.age + " years old<br/>");
+        document.write(this.occupation + "<hr/>"); 
+    },
+    changeWork: function (occupation){
+        this.occupation = occupation;
+    }
+    }
+
+    human.show();
+    human.changeWork("<img src='CyberBionic Systematics.jpg' width='152' height='100'/>");
+    human.show();
+
+</script>
+</head>
+<body>
+</body>
+</html>

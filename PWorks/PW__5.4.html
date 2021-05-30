@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Конструктор Object()</title>
+<script>
+
+    var person = {
+        firstName: "Jim",
+        lastName: "Rainbow",
+        age: 30,
+        occupation: {
+            company: "Microsoft",
+            position: "WebDeveloper"
+        },
+        occupation1: {
+            company: "GSC",
+            position: "3D animator"
+        },
+        skillco: "JavaScript"
+    };
+
+    document.write("<p>" + person.firstName + " " + person.lastName);
+
+    person.age = 25;
+    document.write("<p>Age: " + person.age + " years old.");
+
+    document.write("<p>Occupation: Company: " + person.occupation.company + "<p>Occupation: Position: " + person.occupation.position);
+    document.write("<p>Occupation1: Company: " + person.occupation1.company + "<p>Occupation1: Position: " + person.occupation1.position);
+
+    document.write("<p>Skillco: " + person.skillco);
+</script>
+</head>
+<body>
+</body>
+</html>

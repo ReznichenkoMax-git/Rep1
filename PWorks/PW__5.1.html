@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Обьекты</title>
+<script>
+var instance = { propertyA:543, propertyB:444 };
+
+document.write("<p>instance.propertyA = " + instance.propertyA);
+document.write("<p>instance.propertyB = " + instance.propertyB);
+document.write("<hr/>");
+instance.propertyA = 355;      
+instance["propertyB"] = 566;    
+
+document.write("<p>instance.propertyA = " + instance.propertyA);
+document.write("<p>instance.propertyB = " + instance.propertyB);
+document.write("<hr/>");
+document.write("<p>instance = " + instance);
+</script>
+
+</head>
+<body>
+</body>
+</html>

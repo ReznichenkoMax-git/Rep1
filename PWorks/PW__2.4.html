@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> </title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+
+            var a, b, c;
+            var max;
+
+            a = prompt ("Enter the first number");
+            b = prompt ("Enter the second number");
+            c = prompt ("Enter the third number");
+
+            max = a;
+            if(b>max) max = b;
+            if(c>max) max = c;
+
+            if(a == max && a != b && a != c) alert ("The first number is maximum" );
+            if(b == max && b != a && b != c) alert ("The second number is maximum" );
+            if(c == max && c != a && c != b) alert ("The third number is maximum" );
+            if(a == max && a == b && a != c) alert ("The first and second number are maximum and equal" );
+            if(a == max && a == c && a != b) alert ("The first and third number are maximum and equal" );
+            if(c == max && c == b && c != a) alert ("The second and third number are maximum and equal" );
+            if(a == b && a == c) alert ("The first, second and third numbers are equal");
+        </script>
+    </body>
